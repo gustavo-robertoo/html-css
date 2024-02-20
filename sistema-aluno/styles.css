@@ -1,0 +1,82 @@
+body{
+    background-color: aqua;
+}
+header{
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+}
+header > img{
+    height: 150px;
+    width: 100px;
+}
+
+.links{
+    display: flex;
+    justify-content:space-between;
+    width: 300px;
+    padding-top: 60px;
+    font-size: 18px;
+}
+.links > a:link{
+    text-decoration: none;
+    color: red;
+    cursor: grab;
+}
+.main{
+    display: flex;
+    height: 500px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+footer{
+    background-color: brown;
+    height: 100px;
+}
+.main > aside{
+    flex: 1;
+    background-color: azure;
+}
+.main > section{
+    flex: 4;
+    background-color: burlywood;
+
+}
+ td, th{
+    border: solid 2px black;
+    text-align: center;
+    
+}
+tr:hover {background-color: antiquewhite; }
+table{
+    width: 100%;
+    border-collapse: collapse;
+    height: 80px;
+}
+th{
+    background-color: blueviolet;
+}
+.cad{
+    display: grid;
+    grid-template-areas: "pessoal"
+                         "profissional";
+    grid-template-rows: 50% 50%;
+    height: 600px;
+
+}
+.pessoal{
+    background-color: red;
+    grid-area: pessoal;
+}
+.profissional{
+    background-color: orange;
+    grid-area: profissional;
+}
+.cad > .pessoal > .nome{
+    display: flex;
+    flex-direction: column;
+}
+.cad > .pessoal > .endereco{
+    display: flex;
+    flex-direction: column;
+}
